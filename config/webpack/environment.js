@@ -6,7 +6,7 @@ environment.plugins.prepend('Provide',
     jQuery: 'admin-lte/plugins/jquery/jquery'
   })
 )
-module.exports = environment
+
 environment.toWebpackConfig().merge({
   resolve: {
   alias: {
@@ -14,3 +14,5 @@ environment.toWebpackConfig().merge({
     }
   }
 });
+
+module.exports = environment
